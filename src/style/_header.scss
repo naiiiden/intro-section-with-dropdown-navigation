@@ -112,11 +112,20 @@
 
                     a {
                         color: $medium-gray;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $almost-black;
+                        }
 
                         &.register {
                             border: 2px solid $medium-gray;
                             padding: .75rem;
                             border-radius: .75rem;
+
+                            &:hover {
+                                border: 2px solid $almost-black;
+                            }
                         }
                     }
 

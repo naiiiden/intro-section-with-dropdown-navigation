@@ -6,7 +6,7 @@
           box-sizing: border-box;
 }
 
-body {
+body, .body {
   width: 100%;
   min-height: 100vh;
   font-family: Epilogue, sans-serif;
@@ -167,11 +167,18 @@ img {
   }
   header nav #nav-ul li a {
     color: dimgray;
+    text-decoration: none;
+  }
+  header nav #nav-ul li a:hover {
+    color: #141414;
   }
   header nav #nav-ul li a.register {
     border: 2px solid dimgray;
     padding: .75rem;
     border-radius: .75rem;
+  }
+  header nav #nav-ul li a.register:hover {
+    border: 2px solid #141414;
   }
   header nav #nav-ul li ul {
     list-style-type: none;
@@ -277,6 +284,13 @@ main .text_wrapper section img {
   main .text_wrapper h1 {
     margin-top: auto;
     font-size: 5rem;
+  }
+  main .text_wrapper a {
+    border: 1px solid #141414;
+  }
+  main .text_wrapper a:hover {
+    background: none;
+    color: #141414;
   }
   main .text_wrapper section {
     margin-top: auto;

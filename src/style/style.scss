@@ -10,7 +10,7 @@ $almost-black: hsl(0, 0%, 8%);
     box-sizing: border-box;
 }
 
-body {
+body, .body {
     width: 100%;
     min-height: 100vh;
     font-family: Epilogue, sans-serif;

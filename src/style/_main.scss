@@ -75,6 +75,15 @@ main {
                 font-size: 5rem;
             }
 
+            a {
+                border: 1px solid $almost-black;
+                
+                &:hover {
+                    background: none;
+                    color: $almost-black;
+                }
+            }
+
             section {
                 margin-top: auto;
                 width: 100%;
@@ -83,6 +92,7 @@ main {
                     width: 15%;
                 }
             }
+
         }
     }
 }

@@ -33,19 +33,19 @@ export default function Header() {
                         <ul className="dropdown" aria-label="submenu">
                             <li>
                                 <img src={Todo_icon} alt=""/>
-                                <a>Todo List</a>
+                                <a href="">Todo List</a>
                             </li>
                             <li>
                                 <img src={Calendar_icon} alt=""/>
-                                <a>Calendar</a>
+                                <a href="">Calendar</a>
                             </li>
                             <li>
                                 <img src={Reminders_icon} alt=""/>
-                                <a>Reminders</a>
+                                <a href="">Reminders</a>
                             </li>
                             <li>
                                 <img src={Planning_icon} alt=""/>
-                                <a>Planning</a>
+                                <a href="">Planning</a>
                             </li>
                         </ul>
                     </li>
@@ -55,15 +55,15 @@ export default function Header() {
                             <img src={Arrow_down} alt=""/>
                         </div>
                         <ul className="dropdown" aria-label="submenu">
-                            <li><a>History</a></li>
-                            <li><a>Our Team</a></li>
-                            <li><a>Blog</a></li>
+                            <li><a href="">History</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Blog</a></li>
                         </ul>
                     </li>
-                    <li><a>Careers</a></li>
-                    <li className="push_left"><a>About</a></li>
-                    <li className="push_right"><a>Login</a></li>
-                    <li><a className="register">Register</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li className="push_left"><a href="">About</a></li>
+                    <li className="push_right"><a href="">Login</a></li>
+                    <li><a className="register" href="">Register</a></li>
                 </ul>
             </nav>
         </header>
