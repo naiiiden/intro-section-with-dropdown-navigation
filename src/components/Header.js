@@ -5,7 +5,9 @@ import Todo_icon from "../images/icon-todo.svg";
 import Calendar_icon from "../images/icon-calendar.svg";
 import Reminders_icon from "../images/icon-reminders.svg";
 import Planning_icon from "../images/icon-planning.svg";
- 
+import Arrow_up from "../images/icon-arrow-up.svg";
+import Arrow_down from "../images/icon-arrow-down.svg";
+
 export default function Header() {
     return (
         <header>
@@ -16,7 +18,11 @@ export default function Header() {
             <nav>
                 <ul id="nav-ul" className="nav-ul">
                     <li>
-                        <a aria-haspopup="true">Features</a>
+                        <div className="link_arrow_container">
+                            <a aria-haspopup="true">Features</a>
+                            <img src={Arrow_down} alt=""/>
+                        </div>
+                        
                         <ul className="dropdown" aria-label="submenu">
                             <li>
                                 <img src={Todo_icon} alt=""/>
@@ -37,7 +43,10 @@ export default function Header() {
                         </ul>
                     </li>
                     <li>
-                        <a aria-haspopup="true">Company</a>
+                        <div className="link_arrow_container">
+                            <a aria-haspopup="true">Company</a>
+                            <img src={Arrow_down} alt=""/>
+                        </div>
                         <ul className="dropdown" aria-label="submenu">
                             <li><a>History</a></li>
                             <li><a>Our Team</a></li>
