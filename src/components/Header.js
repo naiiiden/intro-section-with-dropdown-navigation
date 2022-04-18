@@ -61,9 +61,9 @@ export default function Header() {
                         </ul>
                     </li>
                     <li><a>Careers</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Login</a></li>
-                    <li><a>Register</a></li>
+                    <li className="push_left"><a>About</a></li>
+                    <li className="push_right"><a>Login</a></li>
+                    <li><a className="register">Register</a></li>
                 </ul>
             </nav>
         </header>
