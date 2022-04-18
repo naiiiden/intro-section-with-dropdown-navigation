@@ -24,7 +24,7 @@ export default function Header() {
             </button>
             <nav>
                 <ul id="nav-ul" className={isActive ? null : "show"}>
-                    <li>
+                    <li className="submenu">
                         <div className="link_arrow_container">
                             <a aria-haspopup="true">Features</a>
                             <img src={Arrow_down} alt=""/>
@@ -49,7 +49,7 @@ export default function Header() {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="submenu">
                         <div className="link_arrow_container">
                             <a aria-haspopup="true">Company</a>
                             <img src={Arrow_down} alt=""/>

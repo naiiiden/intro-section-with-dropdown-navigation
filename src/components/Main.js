@@ -10,7 +10,7 @@ export default function Main() {
     return (
         <main>
             <img src={Mobile_hero} alt="" className="mobile_hero"/>
-            <img src={Desktop_hero} alt="" className="desktop_hero"/>
+            {/* <img src={Desktop_hero} alt="" className="desktop_hero"/> */}
             <div className="text_wrapper">
                 <h1>Make remote work</h1>
                 <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
