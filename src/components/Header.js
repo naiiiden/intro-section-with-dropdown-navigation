@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Logo from "../images/logo.svg";
 import Menu_icon from "../images/icon-menu.svg";
+import Menu_icon2 from "../images/icon-close-menu.svg";
 import Todo_icon from "../images/icon-todo.svg";
 import Calendar_icon from "../images/icon-calendar.svg";
 import Reminders_icon from "../images/icon-reminders.svg";
@@ -19,7 +20,7 @@ export default function Header() {
         <header>
             <img src={Logo} alt="Snap logo"/>
             <button aria-label="toggle navigation" id="hamburger" className="hamburger" onClick={ToggleClass}>
-                <img src={Menu_icon}/>
+                <img src={isActive ? Menu_icon : Menu_icon2}/>
             </button>
             <nav>
                 <ul id="nav-ul" className={isActive ? null : "show"}>
