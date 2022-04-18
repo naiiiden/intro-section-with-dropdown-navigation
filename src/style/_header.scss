@@ -1,0 +1,11 @@
+header {
+    nav {
+        #nav-ul {
+            display: none;
+
+            &.show {
+                display: flex;
+            }
+        }
+    }
+}

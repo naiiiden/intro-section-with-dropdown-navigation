@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Logo from "../images/logo.svg";
 import Menu_icon from "../images/icon-menu.svg";
 import Todo_icon from "../images/icon-todo.svg";
@@ -9,14 +10,19 @@ import Arrow_up from "../images/icon-arrow-up.svg";
 import Arrow_down from "../images/icon-arrow-down.svg";
 
 export default function Header() {
+    const [isActive, setActive] = useState("false");
+    const ToggleClass = () => {
+        setActive(!isActive);
+    };
+
     return (
         <header>
             <img src={Logo} alt="Snap logo"/>
-            <button aria-label="toggle navigation" id="hamburger" className="hamburger">
+            <button aria-label="toggle navigation" id="hamburger" className="hamburger" onClick={ToggleClass}>
                 <img src={Menu_icon}/>
             </button>
             <nav>
-                <ul id="nav-ul" className="nav-ul">
+                <ul id="nav-ul" className={isActive ? null : "show"}>
                     <li>
                         <div className="link_arrow_container">
                             <a aria-haspopup="true">Features</a>

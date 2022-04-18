@@ -15,4 +15,14 @@ body {
 p {
   font-size: 18px;
 }
+
+header nav #nav-ul {
+  display: none;
+}
+
+header nav #nav-ul.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=style.css.map */
