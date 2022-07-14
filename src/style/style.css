@@ -10,6 +10,13 @@ body, .body {
   width: 100%;
   min-height: 100vh;
   font-family: Epilogue, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 p {
@@ -188,6 +195,7 @@ img {
 
 main {
   padding: 1rem 0 2rem 0;
+  margin: auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
