@@ -175,9 +175,13 @@ img {
   header nav #nav-ul li a {
     color: dimgray;
     text-decoration: none;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   header nav #nav-ul li a:hover {
     color: #141414;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   header nav #nav-ul li a.register {
     border: 2px solid dimgray;
@@ -186,6 +190,8 @@ img {
   }
   header nav #nav-ul li a.register:hover {
     border: 2px solid #141414;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   header nav #nav-ul li ul {
     list-style-type: none;

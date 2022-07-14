@@ -113,9 +113,11 @@
                     a {
                         color: $medium-gray;
                         text-decoration: none;
+                        transition: .2s;
 
                         &:hover {
                             color: $almost-black;
+                            transition: .2s;
                         }
 
                         &.register {
@@ -125,6 +127,7 @@
 
                             &:hover {
                                 border: 2px solid $almost-black;
+                                transition: .2s;
                             }
                         }
                     }
