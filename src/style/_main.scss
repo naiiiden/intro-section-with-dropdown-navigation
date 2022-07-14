@@ -78,10 +78,12 @@ main {
 
             a {
                 border: 1px solid $almost-black;
+                transition: .2s;
                 
                 &:hover {
                     background: none;
                     color: $almost-black;
+                    transition: .2s;
                 }
             }
 

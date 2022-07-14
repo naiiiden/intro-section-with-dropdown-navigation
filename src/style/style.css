@@ -301,10 +301,14 @@ main .text_wrapper section img {
   }
   main .text_wrapper a {
     border: 1px solid #141414;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   main .text_wrapper a:hover {
     background: none;
     color: #141414;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   main .text_wrapper section {
     margin-top: auto;
