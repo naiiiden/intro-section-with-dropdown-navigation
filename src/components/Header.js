@@ -17,6 +17,7 @@ export default function Header() {
     };
 
     const [openFeatures, setOpenFeatures] = useState(false);
+    const [openCompany, setOpenCompany] = useState(false);
 
     return (
         <header>
@@ -51,12 +52,12 @@ export default function Header() {
                             </li>
                         </ul>
                     </li>
-                    <li className="submenu">
+                    <li className="submenu" onClick={() => setOpenCompany(!openCompany)}>
                         <div className="link_arrow_container">
                             <a aria-haspopup="true">Company</a>
-                            <img src={Arrow_down} alt=""/>
+                            <img src={openCompany ? Arrow_up : Arrow_down} alt=""/>
                         </div>
-                        <ul className="dropdown" aria-label="submenu">
+                        <ul className={`dropdown ${openCompany ? "show" : ""}`} aria-label="submenu">
                             <li><a href="">History</a></li>
                             <li><a href="">Our Team</a></li>
                             <li><a href="">Blog</a></li>
