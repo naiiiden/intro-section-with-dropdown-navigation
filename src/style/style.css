@@ -102,6 +102,14 @@ img {
             align-items: center;
     gap: 1rem;
   }
+  header nav #nav-ul li.submenu .dropdown {
+    display: none;
+  }
+  header nav #nav-ul li.submenu .dropdown.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   header nav #nav-ul li ul {
     list-style-type: none;
     padding: 1.75rem 1rem 1rem 1rem;

@@ -11,10 +11,12 @@ import Arrow_up from "../images/icon-arrow-up.svg";
 import Arrow_down from "../images/icon-arrow-down.svg";
 
 export default function Header() {
-    const [isActive, setActive] = useState("false");
+    const [isActive, setActive] = useState(false);
     const ToggleClass = () => {
         setActive(!isActive);
     };
+
+    const [openFeatures, setOpenFeatures] = useState(false);
 
     return (
         <header>
@@ -24,13 +26,13 @@ export default function Header() {
             </button>
             <nav>
                 <ul id="nav-ul" className={isActive ? null : "show"}>
-                    <li className="submenu">
+                    <li className="submenu" onClick={() => setOpenFeatures(!openFeatures)}>
                         <div className="link_arrow_container">
                             <a aria-haspopup="true">Features</a>
-                            <img src={Arrow_down} alt=""/>
+                            <img src={openFeatures ? Arrow_up : Arrow_down} alt=""/>
                         </div>
                         
-                        <ul className="dropdown" aria-label="submenu">
+                        <ul className={`dropdown ${openFeatures ? "show" : ""}`} aria-label="submenu">
                             <li>
                                 <img src={Todo_icon} alt=""/>
                                 <a href="">Todo List</a>

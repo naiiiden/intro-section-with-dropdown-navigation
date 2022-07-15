@@ -49,6 +49,16 @@
                         align-items: center;
                         gap: 1rem;
                     }
+
+                    &.submenu {
+                        .dropdown {
+                            display: none;
+
+                            &.show {
+                                display: flex;
+                            }
+                        }
+                    }
     
                     ul {
                         list-style-type: none;
