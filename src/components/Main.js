@@ -14,7 +14,7 @@ export default function Main() {
             <div className="text_wrapper">
                 <h1>Make remote work</h1>
                 <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-                <a href="">Learn more</a>
+                <a href="#0">Learn more</a>
                 <section aria-label="companies that use Snap">
                     <img src={Databiz} alt="Databiz's logo"/>
                     <img src={Audiophile} alt="Audiophile's logo"/>

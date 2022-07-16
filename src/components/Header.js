@@ -23,50 +23,50 @@ export default function Header() {
         <header>
             <img src={Logo} alt="Snap logo"/>
             <button aria-label="toggle navigation" id="hamburger" className="hamburger" onClick={ToggleClass}>
-                <img src={isActive ? Menu_icon : Menu_icon2}/>
+                <img src={isActive ? Menu_icon : Menu_icon2} alt=""/>
             </button>
             <nav>
                 <ul id="nav-ul" className={isActive ? null : "show"}>
                     <li className="submenu" onClick={() => setOpenFeatures(!openFeatures)}>
                         <div className="link_arrow_container">
-                            <a aria-haspopup="true">Features</a>
+                            <a href="#0">Features</a>
                             <img src={openFeatures ? Arrow_up : Arrow_down} alt=""/>
                         </div>
                         
                         <ul className={`dropdown ${openFeatures ? "show" : ""}`} aria-label="submenu">
                             <li>
                                 <img src={Todo_icon} alt=""/>
-                                <a href="">Todo List</a>
+                                <a href="#0">Todo List</a>
                             </li>
                             <li>
                                 <img src={Calendar_icon} alt=""/>
-                                <a href="">Calendar</a>
+                                <a href="#0">Calendar</a>
                             </li>
                             <li>
                                 <img src={Reminders_icon} alt=""/>
-                                <a href="">Reminders</a>
+                                <a href="#0">Reminders</a>
                             </li>
                             <li>
                                 <img src={Planning_icon} alt=""/>
-                                <a href="">Planning</a>
+                                <a href="#0">Planning</a>
                             </li>
                         </ul>
                     </li>
                     <li className="submenu" onClick={() => setOpenCompany(!openCompany)}>
                         <div className="link_arrow_container">
-                            <a aria-haspopup="true">Company</a>
+                            <a href="#0">Company</a>
                             <img src={openCompany ? Arrow_up : Arrow_down} alt=""/>
                         </div>
                         <ul className={`dropdown ${openCompany ? "show" : ""}`} aria-label="submenu">
-                            <li><a href="">History</a></li>
-                            <li><a href="">Our Team</a></li>
-                            <li><a href="">Blog</a></li>
+                            <li><a href="#0">History</a></li>
+                            <li><a href="#0">Our Team</a></li>
+                            <li><a href="#0">Blog</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Careers</a></li>
-                    <li className="push_left"><a href="">About</a></li>
-                    <li className="push_right"><a href="">Login</a></li>
-                    <li><a className="register" href="">Register</a></li>
+                    <li><a href="#0">Careers</a></li>
+                    <li className="push_left"><a href="#0">About</a></li>
+                    <li className="push_right"><a href="#0">Login</a></li>
+                    <li><a className="register" href="#0">Register</a></li>
                 </ul>
             </nav>
         </header>
