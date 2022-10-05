@@ -219,6 +219,9 @@ main .text_wrapper a {
   border-radius: 1rem;
   font-weight: 700;
 }
+main .text_wrapper a:focus {
+  outline-offset: 0.4rem;
+}
 main .text_wrapper section {
   padding: 1rem 0.5rem 2rem 0.5rem;
   display: flex;

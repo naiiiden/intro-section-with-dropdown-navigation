@@ -33,6 +33,10 @@ main {
             padding: 1rem;
             border-radius: 1rem;
             font-weight: 700;
+
+            &:focus {
+                outline-offset: .4rem;
+            }
         }
 
         section {
