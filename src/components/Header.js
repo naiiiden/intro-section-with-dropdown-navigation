@@ -27,13 +27,13 @@ export default function Header() {
             </button>
             <nav>
                 <ul id="nav-ul" className={!isActive ? null : "show"}>
-                    <li className="submenu" onClick={() => setOpenFeatures(!openFeatures)}>
+                    <li className="submenu" role="button" onClick={() => setOpenFeatures(!openFeatures)} aria-haspopup="true" aria-expanded={openFeatures ? "true" : "false"}>
                         <div className="link_arrow_container">
                             <a href="#0">Features</a>
                             <img src={openFeatures ? Arrow_up : Arrow_down} alt=""/>
                         </div>
                         
-                        <ul className={`dropdown ${openFeatures ? "show" : ""}`} aria-label="submenu">
+                        <ul className={`dropdown ${openFeatures ? "show" : ""}`}>
                             <li>
                                 <img src={Todo_icon} alt=""/>
                                 <a href="#0">Todo List</a>
@@ -52,12 +52,12 @@ export default function Header() {
                             </li>
                         </ul>
                     </li>
-                    <li className="submenu" onClick={() => setOpenCompany(!openCompany)}>
+                    <li className="submenu" role="button" onClick={() => setOpenCompany(!openCompany)} aria-haspopup="true" aria-expanded={openCompany ? "true" : "false"}>
                         <div className="link_arrow_container">
                             <a href="#0">Company</a>
                             <img src={openCompany ? Arrow_up : Arrow_down} alt=""/>
                         </div>
-                        <ul className={`dropdown ${openCompany ? "show" : ""}`} aria-label="submenu">
+                        <ul className={`dropdown ${openCompany ? "show" : ""}`}>
                             <li><a href="#0">History</a></li>
                             <li><a href="#0">Our Team</a></li>
                             <li><a href="#0">Blog</a></li>
