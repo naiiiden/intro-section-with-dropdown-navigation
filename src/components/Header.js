@@ -22,11 +22,11 @@ export default function Header() {
     return (
         <header>
             <img src={Logo} alt="Snap logo"/>
-            <button aria-label="toggle navigation" id="hamburger" className="hamburger" onClick={ToggleClass}>
-                <img src={isActive ? Menu_icon : Menu_icon2} alt=""/>
+            <button aria-label={!isActive ? "Open menu" : "Close menu"} aria-haspopup="true" aria-expanded={isActive ? "true" : "false"} id="hamburger" className="hamburger" onClick={ToggleClass}>
+                <img src={!isActive ? Menu_icon : Menu_icon2} alt=""/>
             </button>
             <nav>
-                <ul id="nav-ul" className={isActive ? null : "show"}>
+                <ul id="nav-ul" className={!isActive ? null : "show"}>
                     <li className="submenu" onClick={() => setOpenFeatures(!openFeatures)}>
                         <div className="link_arrow_container">
                             <a href="#0">Features</a>
