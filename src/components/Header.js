@@ -27,46 +27,53 @@ export default function Header() {
             </button>
             <nav>
                 <ul id="nav-ul" className={!isActive ? null : "show"}>
-                    <li className="submenu" role="button" onClick={() => setOpenFeatures(!openFeatures)} aria-haspopup="true" aria-expanded={openFeatures ? "true" : "false"}>
-                        <div className="link_arrow_container">
-                            <a href="">Features</a>
-                            <img src={openFeatures ? Arrow_up : Arrow_down} alt=""/>
-                        </div>
-                        
-                        <ul className={`dropdown ${openFeatures ? "show" : ""}`}>
-                            <li>
-                                <img src={Todo_icon} alt=""/>
-                                <a href="#">Todo List</a>
-                            </li>
-                            <li>
-                                <img src={Calendar_icon} alt=""/>
-                                <a href="#">Calendar</a>
-                            </li>
-                            <li>
-                                <img src={Reminders_icon} alt=""/>
-                                <a href="#">Reminders</a>
-                            </li>
-                            <li>
-                                <img src={Planning_icon} alt=""/>
-                                <a href="#">Planning</a>
-                            </li>
-                        </ul>
+                    <li className="submenu">
+                        <button onClick={() => setOpenFeatures(!openFeatures)} aria-haspopup="true" aria-expanded={openFeatures ? "true" : "false"}>
+                            <div className="link_arrow_container">
+                                <span>
+                                    Features
+                                </span>
+                                <img src={openFeatures ? Arrow_up : Arrow_down} alt=""/>
+                            </div>
+                            <ul className={`dropdown ${openFeatures ? "show" : ""}`}>
+                                <li>
+                                    <img src={Todo_icon} alt=""/>
+                                    <a href="">Todo List</a>
+                                </li>
+                                <li>
+                                    <img src={Calendar_icon} alt=""/>
+                                    <a href="">Calendar</a>
+                                </li>
+                                <li>
+                                    <img src={Reminders_icon} alt=""/>
+                                    <a href="">Reminders</a>
+                                </li>
+                                <li>
+                                    <img src={Planning_icon} alt=""/>
+                                    <a href="">Planning</a>
+                                </li>
+                            </ul>
+                        </button>
                     </li>
-                    <li className="submenu" role="button" onClick={() => setOpenCompany(!openCompany)} aria-haspopup="true" aria-expanded={openCompany ? "true" : "false"}>
-                        <div className="link_arrow_container">
-                            <a href="#">Company</a>
-                            <img src={openCompany ? Arrow_up : Arrow_down} alt=""/>
-                        </div>
-                        <ul className={`dropdown ${openCompany ? "show" : ""}`}>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
+                    <li className="submenu">
+                        <button onClick={() => setOpenCompany(!openCompany)} aria-haspopup="true" aria-expanded={openCompany ? "true" : "false"}>
+                            <div className="link_arrow_container">
+                                <span>
+                                    Company
+                                </span>
+                                <img src={openCompany ? Arrow_up : Arrow_down} alt=""/>
+                            </div>
+                            <ul className={`dropdown ${openCompany ? "show" : ""}`}>
+                                <li><a href="">History</a></li>
+                                <li><a href="">Our Team</a></li>
+                                <li><a href="">Blog</a></li>
+                            </ul>
+                        </button>
                     </li>
-                    <li><a href="#">Careers</a></li>
-                    <li className="push_left"><a href="#">About</a></li>
-                    <li className="push_right"><a href="#">Login</a></li>
-                    <li><a className="register" href="#">Register</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li className="push_left"><a href="">About</a></li>
+                    <li className="push_right"><a href="">Login</a></li>
+                    <li><a className="register" href="">Register</a></li>
                 </ul>
             </nav>
         </header>
